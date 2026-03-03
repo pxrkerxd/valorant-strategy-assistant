@@ -5,7 +5,7 @@ A sleek, glassmorphic web application designed for Valorant players to optimize 
 
 
 ## 🚀 Live Demo
-**[Insert your GitHub Pages link here]**
+**[https://pxrkerxd.github.io/valorant-strategy-assistant/]**
 
 ## ✨ Features
 
@@ -24,7 +24,8 @@ A sleek, glassmorphic web application designed for Valorant players to optimize 
 
 ## 📸 Screenshots
 
-> *Add a screenshot of your Team Builder or Agent Data tab here to show off the UI!*
+> *<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2e29542a-e6e3-45e8-8d38-624b6c471364" />
+*
 
 ## 📖 How to Use
 
