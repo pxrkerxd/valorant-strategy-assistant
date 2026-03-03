@@ -1,0 +1,350 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: url('assets/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ece8e1; /* Valorant Off-White */
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    /* Frosted glass header */
+    background: rgba(17, 17, 17, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); /* Safari support */
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 70, 85, 0.4); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.accent {
+    color: #ff4655; /* Valorant Red */
+    text-shadow: 0 0 10px rgba(255, 70, 85, 0.4); /* Slight glow */
+}
+
+nav {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    /* Glass buttons */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    color: #ece8e1;
+    border: 1px solid rgba(255, 70, 85, 0.5);
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: rgba(255, 70, 85, 0.8);
+    color: #fff;
+    box-shadow: 0 0 15px rgba(255, 70, 85, 0.4);
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+main {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+/* Dynamic Content Styles */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* --- Glassmorphism Grid & Cards --- */
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    /* The Glass Effect */
+    background: rgba(31, 42, 51, 0.35); /* Translucent Valorant Dark */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle bright edge */
+    border-left: 4px solid #ff4655; /* Keep the bold red accent */
+    border-radius: 12px; /* Smooth corners for glass */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); /* Deep shadow for 3D pop */
+    overflow: hidden;
+}
+
+@media (min-width: 600px) {
+    .card {
+        flex-direction: row;
+    }
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #ff4655;
+    text-shadow: 0 0 8px rgba(255, 70, 85, 0.3);
+}
+
+.card-img {
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 600px) {
+    .card-img {
+        border-bottom: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+.agent-img {
+    /* Removed the solid background so the glass blur shows through the transparent PNGs! */
+    background-color: transparent; 
+    object-position: top;
+    padding: 10px;
+}
+
+.card-content {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.role-badge {
+    font-size: 0.75rem;
+    background: rgba(236, 232, 225, 0.15); /* Frosted badge */
+    border: 1px solid rgba(236, 232, 225, 0.3);
+    color: #ece8e1;
+    padding: 3px 8px;
+    border-radius: 6px;
+    margin-left: 10px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+} /* <-- This bracket was missing previously! */
+
+/* --- New UI Polish & Filter Styles --- */
+
+.agent-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Glassmorphic Dropdown Styling */
+select {
+    background: rgba(31, 42, 51, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #ece8e1;
+    border: 1px solid rgba(255, 70, 85, 0.5);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    box-shadow: 0 0 10px rgba(255, 70, 85, 0.3);
+}
+
+select option {
+    background-color: #0f1923; /* Dark background for the dropdown list */
+    color: #ece8e1;
+}
+
+/* Image Hover Polish */
+.card-img {
+    transition: transform 0.4s ease;
+}
+
+.card:hover .card-img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Fade In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards ease-out;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* --- Team Comp Builder Styles --- */
+
+.team-builder-dashboard {
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+.team-display {
+    display: flex;
+    gap: 15px;
+    min-height: 80px;
+    align-items: center;
+    flex: 1;
+}
+
+.selected-team-member {
+    text-align: center;
+    animation: fadeInUp 0.3s forwards ease-out;
+}
+
+.selected-team-member img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ff4655;
+    background-color: #0f1923;
+}
+
+.selected-team-member p {
+    font-size: 0.75rem;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.analyze-btn {
+    background: rgba(255, 70, 85, 0.2);
+    border: 1px solid #ff4655;
+    padding: 15px 25px;
+    margin-left: 20px;
+    height: fit-content;
+}
+
+.analyze-btn:hover {
+    background: #ff4655;
+    color: white;
+}
+
+.comp-roster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.roster-card {
+    background: rgba(31, 42, 51, 0.35);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.roster-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 70, 85, 0.2);
+}
+
+.roster-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.selected-agent {
+    border: 2px solid #ff4655;
+    background: rgba(255, 70, 85, 0.1);
+    box-shadow: 0 0 15px rgba(255, 70, 85, 0.3);
+}
+
+.feedback-box {
+    margin-top: 1.5rem;
+}
+/* --- Interactive UI Effects --- */
+
+/* 1. Haptic Press Effect */
+button:active, 
+.roster-card:active {
+    transform: scale(0.95); /* Squishes down slightly when clicked */
+    transition: transform 0.1s ease;
+}
+
+/* Ensure hover scale doesn't overwrite active scale instantly */
+.roster-card {
+    transition: transform 0.1s ease, box-shadow 0.2s ease; 
+}
+.roster-card:hover {
+    transform: translateY(-5px); /* Only hover up if NOT active */
+}
+.roster-card:active:hover {
+    transform: scale(0.95); /* If clicking AND hovering, stay squished */
+}
+
+/* 2. Selection Glow & Pulse */
+.selected-agent {
+    border: 2px solid #ff4655;
+    background: rgba(255, 70, 85, 0.15);
+    /* Add a pulsing box-shadow animation */
+    animation: radiantPulse 2s infinite ease-in-out;
+}
+
+@keyframes radiantPulse {
+    0% { box-shadow: 0 0 8px rgba(255, 70, 85, 0.3); }
+    50% { box-shadow: 0 0 18px rgba(255, 70, 85, 0.7); }
+    100% { box-shadow: 0 0 8px rgba(255, 70, 85, 0.3); }
+}
+
+/* 3. Dynamic Entry Pop (Dashboard) */
+.selected-team-member {
+    text-align: center;
+    animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; /* Bouncy scale entry */
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}

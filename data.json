@@ -1,0 +1,137 @@
+{
+  "maps": [
+    {
+      "id": "ascent",
+      "name": "Ascent",
+      "image": "assets/ascent.jpg",
+      "description": "Mid control is everything. Closing the doors puts heavy pressure on attackers.",
+      "bestAgents": ["Sova", "Killjoy", "Omen", "Jett"]
+    },
+    {
+      "id": "bind",
+      "name": "Bind",
+      "image": "assets/bind.jpg",
+      "description": "No mid, just teleporters. Fast rotates and heavy utility to clear tight spaces.",
+      "bestAgents": ["Raze", "Viper", "Skye", "Brimstone"]
+    },
+    {
+      "id": "haven",
+      "name": "Haven",
+      "image": "assets/haven.jpg",
+      "description": "Three sites to defend. Attackers have the rotational advantage, making info gathering crucial.",
+      "bestAgents": ["Killjoy", "Sova", "Omen", "Breach"]
+    },
+    {
+      "id": "split",
+      "name": "Split",
+      "image": "assets/split.jpg",
+      "description": "Heavily defender-sided due to tight chokepoints and verticality. Mid control is required to split the defense.",
+      "bestAgents": ["Raze", "Cypher", "Omen", "Viper"]
+    }
+  ],
+  "agents": [
+    {
+      "id": "reyna",
+      "name": "Reyna",
+      "role": "Duelist",
+      "image": "https://wallpapercave.com/uwp/uwp4360707.jpeg",
+      "strengths": ["Incredible self-sustain", "1v1 dominance", "Can escape bad positioning with Dismiss"],
+      "counters": ["KAY/O's suppression", "Crossfires", "Operator holding long sightlines"]
+    },
+    {
+      "id": "jett",
+      "name": "Jett",
+      "role": "Duelist",
+      "image": "https://wallpapercave.com/uwp/uwp4360525.jpeg",
+      "strengths": ["Unmatched mobility", "Best Operator agent", "Can take aggressive off-angles"],
+      "counters": ["Cypher trips", "KAY/O's knife", "Getting caught without dash"]
+    },
+    {
+      "id": "raze",
+      "name": "Raze",
+      "role": "Duelist",
+      "image": "https://wallpapercave.com/uwp/uwp4360612.jpeg",
+      "strengths": ["Massive explosive damage", "Fast movement with satchels", "Boombot clears tight spaces"],
+      "counters": ["Open areas with no walls", "Cypher trips mid-flight"]
+    },
+    {
+      "id": "omen",
+      "name": "Omen",
+      "role": "Controller",
+      "image": "https://wallpapercave.com/uwp/uwp4360584.jpeg",
+      "strengths": ["Global map presence", "Unpredictable repositioning", "Paranoia blind is lethal"],
+      "counters": ["Fast site executions", "Aggressive duelists closing the gap"]
+    },
+    {
+      "id": "viper",
+      "name": "Viper",
+      "role": "Controller",
+      "image": "https://wallpapercave.com/uwp/uwp4361869.jpeg",
+      "strengths": ["Dominates large maps", "Incredible post-plant utility", "Ultimate wins rounds solo"],
+      "counters": ["KAY/O knife drops her wall", "Running out of fuel early"]
+    },
+    {
+      "id": "brimstone",
+      "name": "Brimstone",
+      "role": "Controller",
+      "image": "https://wallpapercave.com/wp/wp6489727.png",
+      "strengths": ["Drops 3 smokes instantly", "Great post-plant molly", "Ultimate clears out Sentinel setups"],
+      "counters": ["Smokes don't recharge", "Limited range on utility"]
+    },
+    {
+      "id": "killjoy",
+      "name": "Killjoy",
+      "role": "Sentinel",
+      "image": "https://wallpapercave.com/uwp/uwp4360556.jpeg",
+      "strengths": ["Holds down sites solo", "Great post-plant utility", "Ultimate forces enemies to clear out"],
+      "counters": ["Sova shock darts destroying setup", "KAY/O knife", "Raze grenades"]
+    },
+    {
+      "id": "cypher",
+      "name": "Cypher",
+      "role": "Sentinel",
+      "image": "https://wallpapercave.com/uwp/uwp4359485.jpeg",
+      "strengths": ["Flawless flank watch", "Unbreakable setups on site", "Ultimate gives team-wide wallhacks"],
+      "counters": ["Raze satchels breaking trips", "Sova drone triggering traps"]
+    },
+    {
+      "id": "sage",
+      "name": "Sage",
+      "role": "Sentinel",
+      "image": "https://wallpapercave.com/wp/wp13704980.jpg",
+      "strengths": ["Revives teammates", "Stops fast rushes with slow orbs", "Wall cuts off major chokepoints"],
+      "counters": ["Omen teleporting over wall", "Shattering her wall instantly on pistol round"]
+    },
+    {
+      "id": "sova",
+      "name": "Sova",
+      "role": "Initiator",
+      "image": "https://wallpapercave.com/wp/wp6404372.png",
+      "strengths": ["Best pure info gathering in the game", "Post-plant shock darts", "Drone guarantees safe entry"],
+      "counters": ["Players shooting dart instantly", "Smokes blocking drone vision"]
+    },
+    {
+      "id": "skye",
+      "name": "Skye",
+      "role": "Initiator",
+      "image": "https://wallpapercave.com/wp/wp13803001.png",
+      "strengths": ["Flashes give audio info", "Can heal entire team at once", "Dog clears tight angles"],
+      "counters": ["Shooting her dog/bird quickly", "Cannot heal herself"]
+    },
+    {
+      "id": "kayo",
+      "name": "KAY/O",
+      "role": "Initiator",
+      "image": "https://wallpapercave.com/wp/wp9452970.png",
+      "strengths": ["Shuts down Sentinels and Duelists", "Pop flashes are incredibly hard to dodge", "Ultimate turns off all enemy utility"],
+      "counters": ["Getting pushed while holding flash", "Knife can be shot before it scans"]
+    }
+  ],
+  "tips": [
+    "Crosshair Placement: Keep it head height. Stop aiming at the floor!",
+    "Stop Moving When Shooting: Counter-strafe or stand still to ensure accuracy.",
+    "Economy: Buy with your team. If they save, you save. Don't force a Vandal with no shields.",
+    "Play the Bomb: If the spike is planted, you don't need to hunt for kills. Play time.",
+    "Communication: Use your mic. Calling out enemy positions wins rounds."
+  ]
+}

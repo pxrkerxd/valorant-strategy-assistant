@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Strategy Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>VALORANT <span class="accent">STRAT ASSISTANT</span></h1>
+        <nav>
+            <button onclick="loadSection('maps')">Map Intel</button>
+            <button onclick="loadSection('agents')">Agent Data</button>
+            <button onclick="loadSection('comp')">Team Builder</button>
+            <button onclick="loadSection('tips')">Beginner Tips</button>
+        </nav>
+    </header>
+
+    <main id="app-content">
+        <div class="welcome-msg">
+            <h2>Welcome back, Radiant.</h2>
+            <p>Select a category above to load the latest tactical data.</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
